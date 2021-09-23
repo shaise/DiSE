@@ -1,0 +1,118 @@
+﻿<Window x:Class="SpeedEditorProg.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpeedEditorProg"
+        mc:Ignorable="d"
+        Title="DiSE Programmer" Height="432" Width="574">
+    <Grid>
+        <Button x:Name="butt1" Click="KeyButtClick" MouseEnter="KeyMouseEnter" Content="1" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="40" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt8" Click="KeyButtClick" MouseEnter="KeyMouseEnter" Content="8" HorizontalAlignment="Left" Height="40" Margin="60,10,0,0" VerticalAlignment="Top" Width="40" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt15" Click="KeyButtClick" MouseEnter="KeyMouseEnter" Content="15" HorizontalAlignment="Left" Height="40" Margin="110,10,0,0" VerticalAlignment="Top" Width="40" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt2" Click="KeyButtClick" MouseEnter="KeyMouseEnter" Content="2" HorizontalAlignment="Left" Height="40" Margin="10,60,0,0" VerticalAlignment="Top" Width="40" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt9" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="60,60,0,0" VerticalAlignment="Top" Width="40" Content="9" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt16" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="110,60,0,0" VerticalAlignment="Top" Width="40" Content="16" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt3" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="10,130,0,0" VerticalAlignment="Top" Width="65" Content="3" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt17" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="85,130,0,0" VerticalAlignment="Top" Width="65" Content="17" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt4" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="10,180,0,0" VerticalAlignment="Top" Width="40" Content="4" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt5" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="10,230,0,0" VerticalAlignment="Top" Width="40" Content="5" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt6" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="10,280,0,0" VerticalAlignment="Top" Width="40" Content="6" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt13" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="60,280,0,0" VerticalAlignment="Top" Width="40" Content="13" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt12" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="60,230,0,0" VerticalAlignment="Top" Width="40" Content="12" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt11" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="60,180,0,0" VerticalAlignment="Top" Width="40" Content="11" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt20" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="110,280,0,0" VerticalAlignment="Top" Width="40" Style="{DynamicResource btnBlue}" Content="20"/>
+        <Button x:Name="butt19" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="110,230,0,0" VerticalAlignment="Top" Width="40" Content="19" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt18" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="110,180,0,0" VerticalAlignment="Top" Width="40" Content="18" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt21" Click="KeyButtClick" MouseEnter="KeyMouseEnter" Content="21" HorizontalAlignment="Left" Height="40" Margin="180,10,0,0" VerticalAlignment="Top" Width="40" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt29" Click="KeyButtClick" MouseEnter="KeyMouseEnter" Content="29" HorizontalAlignment="Left" Height="40" Margin="230,10,0,0" VerticalAlignment="Top" Width="40" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt36" Click="KeyButtClick" MouseEnter="KeyMouseEnter" Content="36" HorizontalAlignment="Left" Height="40" Margin="280,10,0,0" VerticalAlignment="Top" Width="40" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt23" Click="KeyButtClick" MouseEnter="KeyMouseEnter" Content="23" HorizontalAlignment="Left" Height="40" Margin="180,60,0,0" VerticalAlignment="Top" Width="40" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt30" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="230,60,0,0" VerticalAlignment="Top" Width="40" Content="30" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt37" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="280,60,0,0" VerticalAlignment="Top" Width="40" Content="37" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt25" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="180,180,0,0" VerticalAlignment="Top" Width="40" Content="25" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt26" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="180,230,0,0" VerticalAlignment="Top" Width="40" Content="26" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt27" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="180,280,0,0" VerticalAlignment="Top" Width="130" Content="27" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt33" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="230,230,0,0" VerticalAlignment="Top" Width="40" Content="33" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt32" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="230,180,0,0" VerticalAlignment="Top" Width="40" Content="32" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt40" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="280,230,0,0" VerticalAlignment="Top" Width="40" Content="40" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt39" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="280,180,0,0" VerticalAlignment="Top" Width="40" Content="39" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt24" Click="KeyButtClick" MouseEnter="KeyMouseEnter" Content="24" HorizontalAlignment="Left" Height="40" Margin="180,130,0,0" VerticalAlignment="Top" Width="40" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt31" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="230,130,0,0" VerticalAlignment="Top" Width="40" Content="31" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt38" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="280,130,0,0" VerticalAlignment="Top" Width="40" Content="38" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt43" Click="KeyButtClick" MouseEnter="KeyMouseEnter" Content="43" HorizontalAlignment="Left" Height="40" Margin="330,10,0,0" VerticalAlignment="Top" Width="40" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt44" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="330,60,0,0" VerticalAlignment="Top" Width="40" Content="44" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt48" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="320,280,0,0" VerticalAlignment="Top" Width="50" Style="{DynamicResource btnBlue}" Content="48"/>
+        <Button x:Name="butt47" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="330,230,0,0" VerticalAlignment="Top" Width="40" Content="47" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt46" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="330,180,0,0" VerticalAlignment="Top" Width="40" Content="46" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt45" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="330,130,0,0" VerticalAlignment="Top" Width="40" Content="45" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt34" Click="KeyButtClick" MouseEnter="KeyMouseEnter" Content="34" HorizontalAlignment="Left" Height="40" Margin="400,10,0,0" VerticalAlignment="Top" Width="65" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt41" Click="KeyButtClick" MouseEnter="KeyMouseEnter" Content="41" HorizontalAlignment="Left" Height="40" Margin="475,10,0,0" VerticalAlignment="Top" Width="65" Style="{DynamicResource btnBlue}"/>
+        <Button x:Name="butt35" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="400,60,0,0" VerticalAlignment="Top" Width="40" Content="35" Style="{DynamicResource btnBlue}" />
+        <Button x:Name="butt42" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="450,60,0,0" VerticalAlignment="Top" Width="40" Content="42" Style="{DynamicResource btnBlue}" />
+        <Button x:Name="butt49" Click="KeyButtClick" MouseEnter="KeyMouseEnter" HorizontalAlignment="Left" Height="40" Margin="500,60,0,0" VerticalAlignment="Top" Width="40" Content="49" Style="{DynamicResource btnBlue}" />
+        <Ellipse x:Name="JogWheel" Fill="#f8f8f8" HorizontalAlignment="Left" Height="150" Margin="395,170,0,0" Stroke="#ddd" VerticalAlignment="Top" Width="150"/>
+        <Ellipse x:Name="JogWheelAngle" Fill="#eee" HorizontalAlignment="Left" Height="10" Margin="465,165,0,0" Stroke="#ddd" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="keyData" Content="" Background="#f8f8f8" HorizontalAlignment="Left" Height="30" Margin="10,340,0,0" VerticalAlignment="Top" Width="325"/>
+        <Button x:Name="buttProgram" Click="ButtProgram_Click" HorizontalAlignment="Left" Height="30" Margin="465,340,0,0" VerticalAlignment="Top" Width="80" Content="Program!" Style="{DynamicResource btnGreen}" ToolTip="Permanently program current configuration.&#10;Ctrl-Click for factory default"/>
+        <!--Image x:Name="imageConnect" Source="{StaticResource connectedImg}" HorizontalAlignment="Left" Height="30" Margin="340,340,0,0" VerticalAlignment="Top" Width="30"/ -->
+        <Label x:Name="labelConnect" Content="{DynamicResource connectedIcon}" Padding="0" HorizontalAlignment="Left" Height="30" Margin="340,340,0,0" VerticalAlignment="Top" Width="30"/>
+        <Button x:Name="buttR1" Click="DialButtClick" MouseEnter="DialButtEnter" Content="" HorizontalAlignment="Left" Margin="474,181,0,0" VerticalAlignment="Top" Width="30" Style="{DynamicResource btnOdd}" Height="17" RenderTransformOrigin="0.5,0.5">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Path Name="contour" Data="m 231.94727,321.2832 v 10.17578 c 16.96029,1.20066 32.6886,8.00734 45.9707,18.91797 l 8.50195,-13.64062 C 270.1801,327.65029 251.66839,322.13905 231.94727,321.2832 Z" Fill="{TemplateBinding Background}" HorizontalAlignment="Left" Height="16" Margin="0,0,0,0" Stretch="Fill" Stroke="#ccc" VerticalAlignment="Top" Width="29"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="buttR2" Click="DialButtClick" MouseEnter="DialButtEnter" Content="" HorizontalAlignment="Left" Margin="501,192,0,0" VerticalAlignment="Top" Width="24" Style="{DynamicResource btnOdd}" Height="26" RenderTransformOrigin="0.5,0.5">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Path Name="contour" Data="m 296.04883,342.72266 -9.66406,15.50781 c 8.37598,8.73936 15.44985,19.2834 20.83398,31.13281 l 21.87695,-12.97656 c -8.74494,-13.23618 -19.984,-24.68088 -33.04687,-33.66406 z" Fill="{TemplateBinding Background}" HorizontalAlignment="Left" Height="25" Margin="0,0,0,0" Stretch="Fill" Stroke="#ccc" VerticalAlignment="Top" Width="23"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="buttR3" Click="DialButtClick" MouseEnter="DialButtEnter" Content="" HorizontalAlignment="Left" Margin="514,214,0,0" VerticalAlignment="Top" Width="21" Style="{DynamicResource btnOdd}" Height="32" RenderTransformOrigin="0.5,0.5">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Path Name="contour" Data="m 334.89844,386.12695 -23.42383,13.89258 c 4.6906,13.51259 7.29297,28.3704 7.29297,43.97461 h 30.59765 c 0,-20.92575 -5.23756,-40.6248 -14.46679,-57.86719 z" Fill="{TemplateBinding Background}" HorizontalAlignment="Left" Height="31" Margin="0,0,0,0" Stretch="Fill" Stroke="#ccc" VerticalAlignment="Top" Width="20.5"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="buttL1" Click="DialButtClick" MouseEnter="DialButtEnter" Content="" HorizontalAlignment="Left" Margin="437,181,0,0" VerticalAlignment="Top" Width="30" Style="{DynamicResource btnOdd}" Height="17" RenderTransformOrigin="0.5,0.5">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Path Name="contour" Data="m 58.356068,89.268425 v 2.359567 c -3.932763,0.27841 -7.579854,1.856747 -10.659716,4.386711 l -1.971437,-3.162996 c 3.7657,-2.106877 8.058207,-3.384827 12.631153,-3.583282 z" Fill="{TemplateBinding Background}" HorizontalAlignment="Left" Height="16" Margin="0,0,0,0" Stretch="Fill" Stroke="#ccc" VerticalAlignment="Top" Width="29"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="buttL2" Click="DialButtClick" MouseEnter="DialButtEnter" Content="" HorizontalAlignment="Left" Margin="416,192,0,0" VerticalAlignment="Top" Width="24" Style="{DynamicResource btnOdd}" Height="26" RenderTransformOrigin="0.5,0.5">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Path Name="contour" Data="m 43.492157,94.239821 2.240908,3.595961 c -1.942227,2.026489 -3.582521,4.471448 -4.830996,7.219098 l -5.072842,-3.00902 c 2.027783,-3.069209 4.633903,-5.723013 7.66293,-7.806039 z" Fill="{TemplateBinding Background}" HorizontalAlignment="Left" Height="25" Margin="0,0,0,0" Stretch="Fill" Stroke="#ccc" VerticalAlignment="Top" Width="23"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="buttL3" Click="DialButtClick" MouseEnter="DialButtEnter" Content="" HorizontalAlignment="Left" Margin="406,214,0,0" VerticalAlignment="Top" Width="21" Style="{DynamicResource btnOdd}" Height="32" RenderTransformOrigin="0.5,0.5">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Path Name="contour" Data="m 34.483684,104.30444 5.431533,3.22142 c -1.087659,3.1333 -1.691099,6.57854 -1.691099,10.19686 h -7.095003 c 0,-4.85228 1.214489,-9.42011 3.354569,-13.41828 z
+                          " Fill="{TemplateBinding Background}" HorizontalAlignment="Left" Height="31" Margin="0,0,0,0" Stretch="Fill" Stroke="#ccc" VerticalAlignment="Top" Width="20.5"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="buttShtl" Click="ButtShtl_Click" Content="Shtl-mode" HorizontalAlignment="Left" Height="25" Margin="440,265,0,0" VerticalAlignment="Top" Width="65" Style="{DynamicResource btnMod}" FontSize="10" FontWeight="Bold"/>
+        <!--Label x:Name="labelWheel" Content="S1" HorizontalAlignment="Left" Margin="445,215,0,0" VerticalAlignment="Top" Height="46" Width="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Foreground="#FF8D8D8D"/ -->
+        <ComboBox x:Name="comboJogMode" SelectionChanged="ComboJogMode_SelectionChanged" FontSize="14" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="30" Margin="448,225,0,0" VerticalAlignment="Top" Width="45" FontWeight="Bold" Foreground="#FF888888" VerticalContentAlignment="Center">
+            <ComboBoxItem Content="J1"/>
+            <ComboBoxItem Content="J2"/>
+            <ComboBoxItem Content="J3"/>
+            <ComboBoxItem Content="J4"/>
+            <ComboBoxItem Content="J5"/>
+            <ComboBoxItem Content="J6"/>
+        </ComboBox>
+
+        <Button x:Name="buttLoad" Click="ButtLoad_Click" HorizontalAlignment="Left" Height="30" Margin="395,340,0,0" VerticalAlignment="Top" Width="30" Style="{DynamicResource btnBlue}" Content="{DynamicResource loadIcon}" ToolTip="Load a configuration from file" />
+        <Button x:Name="buttSave" Click="ButtSave_Click" HorizontalAlignment="Left" Height="30" Margin="430,340,0,0" VerticalAlignment="Top" Width="30" Style="{DynamicResource btnBlue}" Content="{DynamicResource saveIcon}" Padding="0,0,0,0" ToolTip="Save current configuration to file"/>
+        <Label x:Name="labelRpm" Content="" HorizontalAlignment="Left" Height="25" Margin="450,200,0,0" VerticalAlignment="Top" Width="40" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="#FF888888"/>
+    </Grid>
+</Window>

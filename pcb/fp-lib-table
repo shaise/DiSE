@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name CherryMX_KailhSocket_LED)(type KiCad)(uri ${KIPRJMOD}/CherryMX_KailhSocket_LED.pretty)(options "")(descr ""))
+  (lib (name BP)(type KiCad)(uri ${KIPRJMOD}/BP.pretty)(options "")(descr ""))
+)

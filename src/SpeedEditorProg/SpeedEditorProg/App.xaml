@@ -1,0 +1,122 @@
+﻿<Application x:Class="SpeedEditorProg.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SpeedEditorProg"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <TextBlock x:Key="labelMinRate" FontSize="10" Height="30" Width="40">Min<LineBreak/>Rate:</TextBlock>
+        <Path x:Key="saveIcon" Data="m 89.623793,60.791413 v 6.578103 h 4.385402 V 60.791413 Z M 78.660287,58.598711 v 10.963507 h 17.54161 V 58.598711 Z M 74.274884,56.40601 V 82.718424 H 100.5873 V 60.791413 L 96.201897,56.40601 Z" Fill="#55ddff" HorizontalAlignment="Left" Margin="0,0,0,0" Stretch="Fill" StrokeThickness="0" VerticalAlignment="Top" />
+        <Path x:Key="loadIcon" Data="m 67.696781,157.27027 h 2.1927 v 6.5781 h -2.1927 z m 8.770805,6.5781 h -4.385403 v -8.77081 h -2.192702 l 4.385403,-4.3854 4.385403,4.3854 h -2.192701 z m 2.192696,-10e-6 2e-6,-6.5781 10.963509,1e-5 v 17.54161 l -4.385405,-10.96351 z m -15.348906,2.19271 4.385405,10.9635 h 19.734308 l -4.385403,-10.9635 z" Fill="#55ddff" HorizontalAlignment="Left"  Margin="0,0,0,0" Stretch="Fill" StrokeThickness="0" VerticalAlignment="Top" />
+        <Path x:Key="rightIcon" Data="m 190,195 v 44.99999 L 210,220 v -5.00001 z" Fill="#55ddff" HorizontalAlignment="Center"  Margin="0,0,0,0" Stretch="Fill" StrokeThickness="0" VerticalAlignment="Center" />
+        <Path x:Key="leftIcon" Data="m 185,195 v 44.99999 L 165,220 v -5.00001 z" Fill="#55ddff" HorizontalAlignment="Center"  Margin="0,0,0,0" Stretch="Fill" StrokeThickness="0" VerticalAlignment="Center" />
+        <Path x:Key="connectedIcon" Data="M 510.24414 150.17578 A 75.590551 75.590551 0 0 0 434.6543 225.76758 A 75.590551 75.590551 
+              0 0 0 510.24414 301.35742 A 75.590551 75.590551 0 0 0 585.83398 225.76758 A 75.590551 75.590551 0 0 0 510.24414 150.17578 z 
+              M 548.03125 188.97656 L 564.24219 217.05273 L 536.16406 233.26367 L 519.95508 205.18555 L 548.03125 188.97656 z 
+              M 540.04297 201.07617 L 534.42773 204.31836 L 537.66992 209.93359 L 543.28516 206.69141 L 540.04297 201.07617 z 
+              M 515.52539 204 L 534.97852 237.69141 L 495.66992 260.38672 L 486.81445 258.01172 L 481.19727 261.25391 
+              L 477.95703 255.63867 L 472.3418 258.88086 L 470.7207 256.07422 L 467.91211 257.69531 L 469.5332 260.50195 
+              L 466.72461 262.12305 L 465.10547 259.31641 L 459.48828 262.55859 L 456.24805 256.94141 L 461.86328 253.70117 
+              L 460.24219 250.89258 L 463.04883 249.27148 L 464.66992 252.08008 L 467.47852 250.45898 L 465.85742 247.65039 
+              L 471.47266 244.4082 L 468.23047 238.79297 L 473.8457 235.55078 L 476.21875 226.69336 L 515.52539 204 z M 546.52734 212.30664 
+              L 540.91211 215.54883 L 544.1543 221.16406 L 549.76953 217.92188 L 546.52734 212.30664 z " Fill="#8dff8d" HorizontalAlignment="Left"  Margin="0,0,0,0" Stretch="Fill" StrokeThickness="0" VerticalAlignment="Top" />
+        <Path x:Key="disconnectedIcon" Data="m 185.09074,43.705269 a 20,20 0 0 0 -19.99981,20.00033 20,20 0 0 0 19.99981,19.999812 
+              20,20 0 0 0 19.99981,-19.999812 20,20 0 0 0 -19.99981,-20.00033 z m -7.1143,8.705413 3.96875,6.874 4.58215,-2.645834 
+              5.29115,9.164815 -4.58215,2.645315 3.52744,6.110221 L 190,75 177.21267,52.851999 Z m 17.39274,0.141592 4.40955,7.637261 
+              -7.63726,4.409549 -4.40955,-7.637259 z m -2.17299,3.291274 -1.52704,0.881599 0.8816,1.527554 1.52755,-0.8816 z 
+              m 1.76371,3.054593 -1.52703,0.882116 0.8816,1.527556 1.52755,-0.882116 z m -15.30604,1.708939 5.29115,9.164814 
+              -3.81837,2.205035 -2.40967,-0.645956 -1.52704,0.882118 -0.88212,-1.527556 -1.52755,0.882115 -0.4408,-0.763778 
+              -0.76378,0.440802 0.4408,0.763778 -0.76378,0.440798 -0.4408,-0.763775 -1.52755,0.882115 -0.8816,-1.527556 
+              1.52755,-0.882115 -0.44131,-0.763778 0.76377,-0.440801 0.44132,0.763778 0.76326,-0.440799 -0.4408,-0.763778 
+              1.52755,-0.882118 -0.88211,-1.527037 1.52755,-0.882116 0.64596,-2.409156 z" Fill="#ff8d8d" HorizontalAlignment="Left"  Margin="0,0,0,0" Stretch="Fill" StrokeThickness="0" VerticalAlignment="Top" />
+        <Style TargetType="Button" x:Key="btnBlue">
+            <Setter Property="Background" Value="#f8f8f8"/>
+            <Setter Property="Foreground" Value="#888"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="5" BorderThickness="1" Padding="3" BorderBrush="#ddd">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                            </ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FFD1A7D1"/>
+                    <Setter Property="Foreground" Value="#888"/>
+                </Trigger>
+                <Trigger Property="IsPressed"  Value="True">
+                    <Setter Property="Background" Value="#FFE2CCE2"/>
+                    <Setter Property="Foreground" Value="#888"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Button" x:Key="btnOdd">
+            <Setter Property="Background" Value="#f0f0f0"/>
+            <Setter Property="Foreground" Value="#888"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="5"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FFD1A7D1"/>
+                    <Setter Property="Foreground" Value="#888"/>
+                </Trigger>
+                <Trigger Property="IsPressed"  Value="True">
+                    <Setter Property="Background" Value="#FFE2CCE2"/>
+                    <Setter Property="Foreground" Value="#888"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Button" x:Key="btnGreen">
+            <Setter Property="Background" Value="#FFEAF9DE"/>
+            <Setter Property="Foreground" Value="#888"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="5" BorderThickness="1" Padding="5" BorderBrush="#ddd">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                            </ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FFC6F5A4"/>
+                    <Setter Property="Foreground" Value="#888"/>
+                </Trigger>
+                <Trigger Property="IsPressed"  Value="True">
+                    <Setter Property="Background" Value="#FFDAFDC0"/>
+                    <Setter Property="Foreground" Value="#888"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Button" x:Key="btnMod">
+            <Setter Property="Background" Value="#f8f8f8"/>
+            <Setter Property="Foreground" Value="#888"/>
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="5" BorderThickness="1" Padding="5" BorderBrush="#ddd">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                            </ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="#444"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    </Application.Resources>
+</Application>

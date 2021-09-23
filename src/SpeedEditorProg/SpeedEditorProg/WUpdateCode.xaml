@@ -1,0 +1,51 @@
+﻿<Window x:Class="SpeedEditorProg.WUpdateCode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpeedEditorProg"
+        mc:Ignorable="d"
+        Title="Select new code" Height="341" Width="329" WindowStyle="ToolWindow">
+    <Grid>
+        <Label x:Name="label" Content="Current code: (click to change)" HorizontalAlignment="Left" Margin="15,0,0,0" VerticalAlignment="Top" FontSize="10"/>
+        <Label x:Name="labelKey" Content="Label" MouseDown="LabelKey_MouseDown" HorizontalAlignment="Left" Height="35" Margin="20,20,0,0" VerticalAlignment="Top" Width="280" VerticalContentAlignment="Center" Background="#FFF8F8F8" FontSize="16" BorderBrush="#FF888888" BorderThickness="1" HorizontalContentAlignment="Center"/>
+        <Button x:Name="buttmod0" Click="ModButtClick" Content="L-Ctrl" HorizontalAlignment="Left" Height="25" Margin="20,90,0,0" VerticalAlignment="Top" Width="45" Style="{DynamicResource btnMod}" FontSize="10" FontWeight="Bold"/>
+        <Button x:Name="buttmod1" Click="ModButtClick" Content="L-Shift" HorizontalAlignment="Left" Height="25" Margin="20,60,0,0" VerticalAlignment="Top" Width="45" Style="{DynamicResource btnMod}" FontSize="10" FontWeight="Bold"/>
+        <Button x:Name="buttmod2" Click="ModButtClick" Content="L-Alt" HorizontalAlignment="Left" Height="25" Margin="115,90,0,0" VerticalAlignment="Top" Width="40" Style="{DynamicResource btnMod}" FontSize="10" FontWeight="Bold"/>
+        <Button x:Name="buttmod3" Click="ModButtClick" Content="L-Gui" HorizontalAlignment="Left" Height="25" Margin="70,90,0,0" VerticalAlignment="Top" Width="40" Style="{DynamicResource btnMod}" FontSize="10" FontWeight="Bold"/>
+        <Button x:Name="buttmod4" Click="ModButtClick" Content="R-Ctrl" HorizontalAlignment="Left" Height="25" Margin="255,90,0,0" VerticalAlignment="Top" Width="45" Style="{DynamicResource btnMod}" FontSize="10" FontWeight="Bold"/>
+        <Button x:Name="buttmod5" Click="ModButtClick" Content="R-Shift" HorizontalAlignment="Left" Height="25" Margin="255,60,0,0" VerticalAlignment="Top" Width="45" Style="{DynamicResource btnMod}" FontSize="10" FontWeight="Bold"/>
+        <Button x:Name="buttmod6" Click="ModButtClick" Content="R-Alt" HorizontalAlignment="Left" Height="25" Margin="165,90,0,0" VerticalAlignment="Top" Width="40" Style="{DynamicResource btnMod}" FontSize="10" FontWeight="Bold"/>
+        <Button x:Name="buttmod7" Click="ModButtClick" Content="R-Gui" HorizontalAlignment="Left" Height="25" Margin="210,90,0,0" VerticalAlignment="Top" Width="40" Style="{DynamicResource btnMod}" FontSize="10" FontWeight="Bold"/>
+        <Button x:Name="buttOk" Click="ButtOk_Click" Content="OK" HorizontalAlignment="Left" Height="35" Margin="20,260,0,0" VerticalAlignment="Top" Width="80" Style="{DynamicResource btnBlue}" FontSize="12" FontWeight="Bold"/>
+        <Button x:Name="buttCancel" Click="ButtCancel_Click" Content="Cancel" HorizontalAlignment="Left" Height="35" Margin="220,260,0,0" VerticalAlignment="Top" Width="80" Style="{DynamicResource btnBlue}" FontSize="12" FontWeight="Bold"/>
+        <Button x:Name="buttAlternate" Click="ButtAlternate_Click" Content="Alt-Function" HorizontalAlignment="Left" Height="25" Margin="160,175,0,0" VerticalAlignment="Top" Width="140" Style="{DynamicResource btnMod}" FontSize="10" FontWeight="Bold"/>
+        <Label x:Name="labelGrpJog" Content="Rate 1:" HorizontalAlignment="Left" Margin="15,165,0,0" VerticalAlignment="Top" Width="70" Height="40" RenderTransformOrigin="0.455,1" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="textGroup" TextChanged="TextGroup_TextChanged" HorizontalAlignment="Left" Height="30" Margin="85,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" Background="#FFF8F8F8"/>
+        <Label x:Name="labelMaxRate" Content="Rate 2:" HorizontalAlignment="Left" Margin="170,165,0,0" VerticalAlignment="Top" Width="70" Height="40" RenderTransformOrigin="0.455,1" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="textMaxRate" TextChanged="TextMaxRate_TextChanged" HorizontalAlignment="Left" Height="30" Margin="240,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" Background="#FFF8F8F8"/>
+        <TextBox x:Name="textCode" TextChanged="TextCode_TextChanged" HorizontalAlignment="Left" Height="30" Margin="85,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" Background="#FFF8F8F8"/>
+        <Label x:Name="label1_Copy" Content="Code:" HorizontalAlignment="Left" Margin="15,130,0,0" VerticalAlignment="Top" Width="50" Height="30" FontSize="14"/>
+        <ComboBox x:Name="comboAlt" SelectionChanged="ComboAlt_SelectionChanged" HorizontalAlignment="Left" Height="30" Margin="160,130,0,0" VerticalAlignment="Top" Width="140" FontWeight="Bold" Foreground="#FF888888" VerticalContentAlignment="Center">
+            <ComboBoxItem Content="No Alt code"/>
+            <ComboBoxItem Content="Toggle"/>
+            <ComboBoxItem Content="Long press"/>
+            <ComboBoxItem Content="Key release"/>
+            <ComboBoxItem Content="Double click"/>
+        </ComboBox>
+        <ComboBox x:Name="comboJogSel" SelectionChanged="ComboJogSel_SelectionChanged" HorizontalAlignment="Left" Height="30" Margin="20,215,0,0" VerticalAlignment="Top" Width="125" FontWeight="Bold" Foreground="#FF888888" VerticalContentAlignment="Center">
+            <ComboBoxItem Content="No Jog action"/>
+            <ComboBoxItem Content="Jog select"/>
+            <ComboBoxItem Content="Jog temp select"/>
+        </ComboBox>
+        <Label x:Name="labelJogMode" Content="Jog mode:" HorizontalAlignment="Left" Margin="170,210,0,0" VerticalAlignment="Top" Width="65" Height="40" RenderTransformOrigin="0.455,1" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="comboJogMode" HorizontalAlignment="Left" Height="30" Margin="240,215,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" Foreground="#FF888888" VerticalContentAlignment="Center">
+            <ComboBoxItem Content="J1"/>
+            <ComboBoxItem Content="J2"/>
+            <ComboBoxItem Content="J3"/>
+            <ComboBoxItem Content="J4"/>
+            <ComboBoxItem Content="J5"/>
+            <ComboBoxItem Content="J6"/>
+        </ComboBox>
+    </Grid>
+</Window>

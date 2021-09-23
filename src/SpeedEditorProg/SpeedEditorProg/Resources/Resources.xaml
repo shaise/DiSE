@@ -1,0 +1,20 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Geometry x:Key="connectedGeometry">F0 M210,297z M0,0z M44.058386,45.311948L45.790437,44.311947 46.790438,46.043999 45.058386,47.043999z M42.058386,41.847846L43.790437,40.847845 44.790438,42.579897 43.058386,43.579898z M37.594285,42.115796L42.594284,50.776049 51.254539,45.776049 46.254539,37.115795z M19.175699,56.213873L20.041725,55.713873 20.541725,56.579898 21.40775,56.079898 20.90775,55.213873 22.639801,54.213873 21.6398,52.48182 23.371851,51.48182 24.103903,48.749771 36.228258,41.749771 42.228259,52.142075 30.103903,59.142075 27.371853,58.410027 25.639802,59.410027 24.639801,57.677974 22.90775,58.677974 22.40775,57.811949 21.541725,58.311949 22.041725,59.177974 21.175699,59.677974 20.675699,58.811949 18.943649,59.811949 17.943649,58.079898 19.675699,57.079898z</Geometry>
+  <DrawingGroup x:Key="connectedDrawingGroup" ClipGeometry="M0,0 V297 H210 V0 H0 Z">
+    <DrawingGroup Opacity="1">
+      <DrawingGroup Opacity="1" Transform="1,0,0,1,-9.652666,222.92304">
+        <GeometryDrawing Brush="#FF8DFF8D">
+          <GeometryDrawing.Geometry>
+            <EllipseGeometry RadiusX="20" RadiusY="20" Center="34.5991,48.4639" />
+          </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+        <GeometryDrawing Brush="#FFFFFFFF" Geometry="{StaticResource connectedGeometry}">
+          <GeometryDrawing.Pen>
+            <Pen Brush="#FFFFFFFF" Thickness="0.365" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" />
+          </GeometryDrawing.Pen>
+        </GeometryDrawing>
+      </DrawingGroup>
+    </DrawingGroup>
+  </DrawingGroup>
+  <DrawingImage x:Key="connectedDrawingImage" Drawing="{StaticResource connectedDrawingGroup}" />
+</ResourceDictionary>
