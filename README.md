@@ -4,6 +4,7 @@ A DIY speed editor to use with video editing sw such as Davinci Resolve and othe
 <img src="/media/dise.jpg" width="800">
 
 ### Parts:
+Blue-Pill STM32 Processor module: https://www.aliexpress.com/item/1766455290.html order both STM32F103C8T6 and ST-Link V2 programmer  
 Encoder: https://www.aliexpress.com/item/4000897699294.html 1 unit  
 Keys: https://www.aliexpress.com/item/1005002378701948.html Order Silent Gray type 44pcs (2 packs of 30)  
 Key Sockets: https://www.aliexpress.com/item/4001051840976.html 50 pcs  
