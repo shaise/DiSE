@@ -1,4 +1,5 @@
 (sym_lib_table
-  (lib (name CherryMX)(type Legacy)(uri ${KIPRJMOD}/CherryMX.lib)(options "")(descr ""))
-  (lib (name bluepill)(type Legacy)(uri ${KIPRJMOD}/bluepill.lib)(options "")(descr ""))
+  (lib (name "CherryMX")(type "Legacy")(uri "${KIPRJMOD}/CherryMX.lib")(options "")(descr ""))
+  (lib (name "bluepill")(type "Legacy")(uri "${KIPRJMOD}/bluepill.lib")(options "")(descr ""))
+  (lib (name "DaVinciKbd-rescue")(type "Legacy")(uri "${KIPRJMOD}/DaVinciKbd-rescue.lib")(options "")(descr ""))
 )
